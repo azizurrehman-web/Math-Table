@@ -4,19 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Math Table</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <div class="container">
+        <div class="math-card">
+
+            <div class="icon">✖</div>
+
     <h1>Math Tables</h1>
 
-    <form>
-        <label for="table">Enter the Math Table Number:</label>
-        <input type="number" name="table" id="table" placeholder="Enter Your Table Number">
+     <p class="subtitle">
+            Generate any multiplication table in seconds.
+        </p>
 
-        <button type="button" onclick="gettable()">Get Table</button>
-        <br>
-        <br>
-        <h2 id="result"></h2>
+    <form id="mathForm">
+        <label for="table">Enter Math Table Number:</label>
+        <div class="input-group">
+        <input type="number" name="table" id="table" placeholder="Enter Table Number">
+
+        <button type="submit">Get Table →</button>
+        
+       </div>
     </form>
+    <p id="error" class="error"></p>
+
+    <div id="result" class="result"></div>
+
+    <p class="footer">Made with ❤️ for learning</p>
+        </div>
+    </div>
 
 
     <script src="./index.js"></script>
